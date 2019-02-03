@@ -1,0 +1,2011 @@
+﻿<Window x:Class="MapMaker.MainWindow"
+xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+Title="MapMaker" Height="700" Width="850" Icon="/MapMaker;component/icon.ico">
+    <Grid Name="gridMain">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="150"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <!-- Map -->
+        <Viewbox Stretch="Uniform" Grid.Row="1">
+            <Border BorderBrush="Black" BorderThickness="2">
+                <Grid Name="gridMap">
+                    <Grid.Background>
+                        <LinearGradientBrush EndPoint="1,0.5" StartPoint="0,0.5">
+                            <GradientStop Color="White" Offset="0" />
+                            <GradientStop Color="LightGray" Offset="1" />
+                        </LinearGradientBrush>
+                    </Grid.Background>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="32"></ColumnDefinition>
+                        <ColumnDefinition Width="32"></ColumnDefinition>
+                        <ColumnDefinition Width="32"></ColumnDefinition>
+                        <ColumnDefinition Width="32"></ColumnDefinition>
+                        <ColumnDefinition Width="32"></ColumnDefinition>
+                        <ColumnDefinition Width="32"></ColumnDefinition>
+                        <ColumnDefinition Width="32"></ColumnDefinition>
+                        <ColumnDefinition Width="32"></ColumnDefinition>
+                        <ColumnDefinition Width="32"></ColumnDefinition>
+                        <ColumnDefinition Width="32"></ColumnDefinition>
+                        <ColumnDefinition Width="32"></ColumnDefinition>
+                        <ColumnDefinition Width="32"></ColumnDefinition>
+                        <ColumnDefinition Width="32"></ColumnDefinition>
+                        <ColumnDefinition Width="32"></ColumnDefinition>
+                        <ColumnDefinition Width="32"></ColumnDefinition>
+                        <ColumnDefinition Width="32"></ColumnDefinition>
+                        <ColumnDefinition Width="32"></ColumnDefinition>
+                        <ColumnDefinition Width="32"></ColumnDefinition>
+                        <ColumnDefinition Width="32"></ColumnDefinition>
+                        <ColumnDefinition Width="32"></ColumnDefinition>
+                        <ColumnDefinition Width="32"></ColumnDefinition>
+                        <ColumnDefinition Width="32"></ColumnDefinition>
+                        <ColumnDefinition Width="32"></ColumnDefinition>
+                        <ColumnDefinition Width="32"></ColumnDefinition>
+                        <ColumnDefinition Width="32"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="32"></RowDefinition>
+                        <RowDefinition Height="32"></RowDefinition>
+                        <RowDefinition Height="32"></RowDefinition>
+                        <RowDefinition Height="32"></RowDefinition>
+                        <RowDefinition Height="32"></RowDefinition>
+                        <RowDefinition Height="32"></RowDefinition>
+                        <RowDefinition Height="32"></RowDefinition>
+                        <RowDefinition Height="32"></RowDefinition>
+                        <RowDefinition Height="32"></RowDefinition>
+                        <RowDefinition Height="32"></RowDefinition>
+                        <RowDefinition Height="32"></RowDefinition>
+                        <RowDefinition Height="32"></RowDefinition>
+                        <RowDefinition Height="32"></RowDefinition>
+                        <RowDefinition Height="32"></RowDefinition>
+                        <RowDefinition Height="32"></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <!-- Row 1-->
+                    <Rectangle Name="Rec0101" Grid.Row="0" Grid.Column="0" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec0102" Grid.Row="0" Grid.Column="1" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec0103" Grid.Row="0" Grid.Column="2" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec0104" Grid.Row="0" Grid.Column="3" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec0105" Grid.Row="0" Grid.Column="4" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec0106" Grid.Row="0" Grid.Column="5" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec0107" Grid.Row="0" Grid.Column="6" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec0108" Grid.Row="0" Grid.Column="7" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec0109" Grid.Row="0" Grid.Column="8" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec0110" Grid.Row="0" Grid.Column="9" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec0111" Grid.Row="0" Grid.Column="10" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec0112" Grid.Row="0" Grid.Column="11" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec0113" Grid.Row="0" Grid.Column="12" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec0114" Grid.Row="0" Grid.Column="13" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec0115" Grid.Row="0" Grid.Column="14" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec0116" Grid.Row="0" Grid.Column="15" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec0117" Grid.Row="0" Grid.Column="16" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec0118" Grid.Row="0" Grid.Column="17" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec0119" Grid.Row="0" Grid.Column="18" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec0120" Grid.Row="0" Grid.Column="19" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec0121" Grid.Row="0" Grid.Column="20" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec0122" Grid.Row="0" Grid.Column="21" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec0123" Grid.Row="0" Grid.Column="22" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec0124" Grid.Row="0" Grid.Column="23" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec0125" Grid.Row="0" Grid.Column="24" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <!-- Row 2-->
+                    <Rectangle Name="Rec0201" Grid.Row="1" Grid.Column="0" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec0202" Grid.Row="1" Grid.Column="1" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec0203" Grid.Row="1" Grid.Column="2" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec0204" Grid.Row="1" Grid.Column="3" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec0205" Grid.Row="1" Grid.Column="4" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec0206" Grid.Row="1" Grid.Column="5" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec0207" Grid.Row="1" Grid.Column="6" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec0208" Grid.Row="1" Grid.Column="7" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec0209" Grid.Row="1" Grid.Column="8" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec0210" Grid.Row="1" Grid.Column="9" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec0211" Grid.Row="1" Grid.Column="10" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec0212" Grid.Row="1" Grid.Column="11" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec0213" Grid.Row="1" Grid.Column="12" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec0214" Grid.Row="1" Grid.Column="13" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec0215" Grid.Row="1" Grid.Column="14" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec0216" Grid.Row="1" Grid.Column="15" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec0217" Grid.Row="1" Grid.Column="16" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec0218" Grid.Row="1" Grid.Column="17" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec0219" Grid.Row="1" Grid.Column="18" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec0220" Grid.Row="1" Grid.Column="19" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec0221" Grid.Row="1" Grid.Column="20" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec0222" Grid.Row="1" Grid.Column="21" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec0223" Grid.Row="1" Grid.Column="22" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec0224" Grid.Row="1" Grid.Column="23" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec0225" Grid.Row="1" Grid.Column="24" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <!-- Row 3-->
+                    <Rectangle Name="Rec0301" Grid.Row="2" Grid.Column="0" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec0302" Grid.Row="2" Grid.Column="1" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec0303" Grid.Row="2" Grid.Column="2" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec0304" Grid.Row="2" Grid.Column="3" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec0305" Grid.Row="2" Grid.Column="4" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec0306" Grid.Row="2" Grid.Column="5" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec0307" Grid.Row="2" Grid.Column="6" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec0308" Grid.Row="2" Grid.Column="7" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec0309" Grid.Row="2" Grid.Column="8" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec0310" Grid.Row="2" Grid.Column="9" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec0311" Grid.Row="2" Grid.Column="10" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec0312" Grid.Row="2" Grid.Column="11" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec0313" Grid.Row="2" Grid.Column="12" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec0314" Grid.Row="2" Grid.Column="13" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec0315" Grid.Row="2" Grid.Column="14" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec0316" Grid.Row="2" Grid.Column="15" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec0317" Grid.Row="2" Grid.Column="16" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec0318" Grid.Row="2" Grid.Column="17" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec0319" Grid.Row="2" Grid.Column="18" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec0320" Grid.Row="2" Grid.Column="19" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec0321" Grid.Row="2" Grid.Column="20" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec0322" Grid.Row="2" Grid.Column="21" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec0323" Grid.Row="2" Grid.Column="22" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec0324" Grid.Row="2" Grid.Column="23" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec0325" Grid.Row="2" Grid.Column="24" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <!-- Row 4-->
+                    <Rectangle Name="Rec0401" Grid.Row="3" Grid.Column="0" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec0402" Grid.Row="3" Grid.Column="1" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec0403" Grid.Row="3" Grid.Column="2" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec0404" Grid.Row="3" Grid.Column="3" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec0405" Grid.Row="3" Grid.Column="4" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec0406" Grid.Row="3" Grid.Column="5" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec0407" Grid.Row="3" Grid.Column="6" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec0408" Grid.Row="3" Grid.Column="7" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec0409" Grid.Row="3" Grid.Column="8" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec0410" Grid.Row="3" Grid.Column="9" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec0411" Grid.Row="3" Grid.Column="10" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec0412" Grid.Row="3" Grid.Column="11" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec0413" Grid.Row="3" Grid.Column="12" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec0414" Grid.Row="3" Grid.Column="13" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec0415" Grid.Row="3" Grid.Column="14" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec0416" Grid.Row="3" Grid.Column="15" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec0417" Grid.Row="3" Grid.Column="16" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec0418" Grid.Row="3" Grid.Column="17" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec0419" Grid.Row="3" Grid.Column="18" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec0420" Grid.Row="3" Grid.Column="19" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec0421" Grid.Row="3" Grid.Column="20" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec0422" Grid.Row="3" Grid.Column="21" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec0423" Grid.Row="3" Grid.Column="22" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec0424" Grid.Row="3" Grid.Column="23" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec0425" Grid.Row="3" Grid.Column="24" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <!-- Row 5-->
+                    <Rectangle Name="Rec0501" Grid.Row="4" Grid.Column="0" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec0502" Grid.Row="4" Grid.Column="1" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec0503" Grid.Row="4" Grid.Column="2" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec0504" Grid.Row="4" Grid.Column="3" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec0505" Grid.Row="4" Grid.Column="4" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec0506" Grid.Row="4" Grid.Column="5" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec0507" Grid.Row="4" Grid.Column="6" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec0508" Grid.Row="4" Grid.Column="7" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec0509" Grid.Row="4" Grid.Column="8" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec0510" Grid.Row="4" Grid.Column="9" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec0511" Grid.Row="4" Grid.Column="10" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec0512" Grid.Row="4" Grid.Column="11" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec0513" Grid.Row="4" Grid.Column="12" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec0514" Grid.Row="4" Grid.Column="13" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec0515" Grid.Row="4" Grid.Column="14" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec0516" Grid.Row="4" Grid.Column="15" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec0517" Grid.Row="4" Grid.Column="16" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec0518" Grid.Row="4" Grid.Column="17" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec0519" Grid.Row="4" Grid.Column="18" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec0520" Grid.Row="4" Grid.Column="19" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec0521" Grid.Row="4" Grid.Column="20" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec0522" Grid.Row="4" Grid.Column="21" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec0523" Grid.Row="4" Grid.Column="22" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec0524" Grid.Row="4" Grid.Column="23" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec0525" Grid.Row="4" Grid.Column="24" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <!-- Row 6-->
+                    <Rectangle Name="Rec0601" Grid.Row="5" Grid.Column="0" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec0602" Grid.Row="5" Grid.Column="1" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec0603" Grid.Row="5" Grid.Column="2" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec0604" Grid.Row="5" Grid.Column="3" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec0605" Grid.Row="5" Grid.Column="4" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec0606" Grid.Row="5" Grid.Column="5" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec0607" Grid.Row="5" Grid.Column="6" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec0608" Grid.Row="5" Grid.Column="7" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec0609" Grid.Row="5" Grid.Column="8" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec0610" Grid.Row="5" Grid.Column="9" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec0611" Grid.Row="5" Grid.Column="10" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec0612" Grid.Row="5" Grid.Column="11" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec0613" Grid.Row="5" Grid.Column="12" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec0614" Grid.Row="5" Grid.Column="13" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec0615" Grid.Row="5" Grid.Column="14" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec0616" Grid.Row="5" Grid.Column="15" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec0617" Grid.Row="5" Grid.Column="16" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec0618" Grid.Row="5" Grid.Column="17" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec0619" Grid.Row="5" Grid.Column="18" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec0620" Grid.Row="5" Grid.Column="19" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec0621" Grid.Row="5" Grid.Column="20" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec0622" Grid.Row="5" Grid.Column="21" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec0623" Grid.Row="5" Grid.Column="22" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec0624" Grid.Row="5" Grid.Column="23" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec0625" Grid.Row="5" Grid.Column="24" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <!-- Row 7-->
+                    <Rectangle Name="Rec0701" Grid.Row="6" Grid.Column="0" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec0702" Grid.Row="6" Grid.Column="1" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec0703" Grid.Row="6" Grid.Column="2" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec0704" Grid.Row="6" Grid.Column="3" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec0705" Grid.Row="6" Grid.Column="4" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec0706" Grid.Row="6" Grid.Column="5" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec0707" Grid.Row="6" Grid.Column="6" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec0708" Grid.Row="6" Grid.Column="7" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec0709" Grid.Row="6" Grid.Column="8" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec0710" Grid.Row="6" Grid.Column="9" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec0711" Grid.Row="6" Grid.Column="10" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec0712" Grid.Row="6" Grid.Column="11" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec0713" Grid.Row="6" Grid.Column="12" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec0714" Grid.Row="6" Grid.Column="13" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec0715" Grid.Row="6" Grid.Column="14" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec0716" Grid.Row="6" Grid.Column="15" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec0717" Grid.Row="6" Grid.Column="16" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec0718" Grid.Row="6" Grid.Column="17" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec0719" Grid.Row="6" Grid.Column="18" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec0720" Grid.Row="6" Grid.Column="19" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec0721" Grid.Row="6" Grid.Column="20" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec0722" Grid.Row="6" Grid.Column="21" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec0723" Grid.Row="6" Grid.Column="22" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec0724" Grid.Row="6" Grid.Column="23" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec0725" Grid.Row="6" Grid.Column="24" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <!-- Row 8-->
+                    <Rectangle Name="Rec0801" Grid.Row="7" Grid.Column="0" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec0802" Grid.Row="7" Grid.Column="1" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec0803" Grid.Row="7" Grid.Column="2" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec0804" Grid.Row="7" Grid.Column="3" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec0805" Grid.Row="7" Grid.Column="4" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec0806" Grid.Row="7" Grid.Column="5" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec0807" Grid.Row="7" Grid.Column="6" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec0808" Grid.Row="7" Grid.Column="7" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec0809" Grid.Row="7" Grid.Column="8" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec0810" Grid.Row="7" Grid.Column="9" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec0811" Grid.Row="7" Grid.Column="10" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec0812" Grid.Row="7" Grid.Column="11" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec0813" Grid.Row="7" Grid.Column="12" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec0814" Grid.Row="7" Grid.Column="13" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec0815" Grid.Row="7" Grid.Column="14" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec0816" Grid.Row="7" Grid.Column="15" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec0817" Grid.Row="7" Grid.Column="16" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec0818" Grid.Row="7" Grid.Column="17" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec0819" Grid.Row="7" Grid.Column="18" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec0820" Grid.Row="7" Grid.Column="19" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec0821" Grid.Row="7" Grid.Column="20" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec0822" Grid.Row="7" Grid.Column="21" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec0823" Grid.Row="7" Grid.Column="22" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec0824" Grid.Row="7" Grid.Column="23" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec0825" Grid.Row="7" Grid.Column="24" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <!-- Row 9-->
+                    <Rectangle Name="Rec0901" Grid.Row="8" Grid.Column="0" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec0902" Grid.Row="8" Grid.Column="1" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec0903" Grid.Row="8" Grid.Column="2" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec0904" Grid.Row="8" Grid.Column="3" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec0905" Grid.Row="8" Grid.Column="4" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec0906" Grid.Row="8" Grid.Column="5" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec0907" Grid.Row="8" Grid.Column="6" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec0908" Grid.Row="8" Grid.Column="7" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec0909" Grid.Row="8" Grid.Column="8" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec0910" Grid.Row="8" Grid.Column="9" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec0911" Grid.Row="8" Grid.Column="10" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec0912" Grid.Row="8" Grid.Column="11" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec0913" Grid.Row="8" Grid.Column="12" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec0914" Grid.Row="8" Grid.Column="13" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec0915" Grid.Row="8" Grid.Column="14" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec0916" Grid.Row="8" Grid.Column="15" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec0917" Grid.Row="8" Grid.Column="16" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec0918" Grid.Row="8" Grid.Column="17" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec0919" Grid.Row="8" Grid.Column="18" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec0920" Grid.Row="8" Grid.Column="19" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec0921" Grid.Row="8" Grid.Column="20" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec0922" Grid.Row="8" Grid.Column="21" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec0923" Grid.Row="8" Grid.Column="22" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec0924" Grid.Row="8" Grid.Column="23" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec0925" Grid.Row="8" Grid.Column="24" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <!-- Row 10-->
+                    <Rectangle Name="Rec1001" Grid.Row="9" Grid.Column="0" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec1002" Grid.Row="9" Grid.Column="1" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec1003" Grid.Row="9" Grid.Column="2" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec1004" Grid.Row="9" Grid.Column="3" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec1005" Grid.Row="9" Grid.Column="4" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec1006" Grid.Row="9" Grid.Column="5" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec1007" Grid.Row="9" Grid.Column="6" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec1008" Grid.Row="9" Grid.Column="7" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec1009" Grid.Row="9" Grid.Column="8" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec1010" Grid.Row="9" Grid.Column="9" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec1011" Grid.Row="9" Grid.Column="10" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec1012" Grid.Row="9" Grid.Column="11" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec1013" Grid.Row="9" Grid.Column="12" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec1014" Grid.Row="9" Grid.Column="13" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec1015" Grid.Row="9" Grid.Column="14" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec1016" Grid.Row="9" Grid.Column="15" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec1017" Grid.Row="9" Grid.Column="16" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec1018" Grid.Row="9" Grid.Column="17" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec1019" Grid.Row="9" Grid.Column="18" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec1020" Grid.Row="9" Grid.Column="19" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec1021" Grid.Row="9" Grid.Column="20" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec1022" Grid.Row="9" Grid.Column="21" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec1023" Grid.Row="9" Grid.Column="22" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec1024" Grid.Row="9" Grid.Column="23" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec1025" Grid.Row="9" Grid.Column="24" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <!-- Row 11-->
+                    <Rectangle Name="Rec1101" Grid.Row="10" Grid.Column="0" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec1102" Grid.Row="10" Grid.Column="1" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec1103" Grid.Row="10" Grid.Column="2" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec1104" Grid.Row="10" Grid.Column="3" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec1105" Grid.Row="10" Grid.Column="4" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec1106" Grid.Row="10" Grid.Column="5" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec1107" Grid.Row="10" Grid.Column="6" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec1108" Grid.Row="10" Grid.Column="7" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec1109" Grid.Row="10" Grid.Column="8" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec1110" Grid.Row="10" Grid.Column="9" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec1111" Grid.Row="10" Grid.Column="10" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec1112" Grid.Row="10" Grid.Column="11" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec1113" Grid.Row="10" Grid.Column="12" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec1114" Grid.Row="10" Grid.Column="13" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec1115" Grid.Row="10" Grid.Column="14" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec1116" Grid.Row="10" Grid.Column="15" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec1117" Grid.Row="10" Grid.Column="16" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec1118" Grid.Row="10" Grid.Column="17" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec1119" Grid.Row="10" Grid.Column="18" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec1120" Grid.Row="10" Grid.Column="19" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec1121" Grid.Row="10" Grid.Column="20" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec1122" Grid.Row="10" Grid.Column="21" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec1123" Grid.Row="10" Grid.Column="22" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec1124" Grid.Row="10" Grid.Column="23" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec1125" Grid.Row="10" Grid.Column="24" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <!-- Row 12-->
+                    <Rectangle Name="Rec1201" Grid.Row="11" Grid.Column="0" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec1202" Grid.Row="11" Grid.Column="1" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec1203" Grid.Row="11" Grid.Column="2" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec1204" Grid.Row="11" Grid.Column="3" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec1205" Grid.Row="11" Grid.Column="4" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec1206" Grid.Row="11" Grid.Column="5" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec1207" Grid.Row="11" Grid.Column="6" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec1208" Grid.Row="11" Grid.Column="7" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec1209" Grid.Row="11" Grid.Column="8" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec1210" Grid.Row="11" Grid.Column="9" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec1211" Grid.Row="11" Grid.Column="10" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec1212" Grid.Row="11" Grid.Column="11" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec1213" Grid.Row="11" Grid.Column="12" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec1214" Grid.Row="11" Grid.Column="13" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec1215" Grid.Row="11" Grid.Column="14" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec1216" Grid.Row="11" Grid.Column="15" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec1217" Grid.Row="11" Grid.Column="16" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec1218" Grid.Row="11" Grid.Column="17" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec1219" Grid.Row="11" Grid.Column="18" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec1220" Grid.Row="11" Grid.Column="19" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec1221" Grid.Row="11" Grid.Column="20" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec1222" Grid.Row="11" Grid.Column="21" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec1223" Grid.Row="11" Grid.Column="22" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec1224" Grid.Row="11" Grid.Column="23" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec1225" Grid.Row="11" Grid.Column="24" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <!-- Row 13-->
+                    <Rectangle Name="Rec1301" Grid.Row="12" Grid.Column="0" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec1302" Grid.Row="12" Grid.Column="1" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec1303" Grid.Row="12" Grid.Column="2" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec1304" Grid.Row="12" Grid.Column="3" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec1305" Grid.Row="12" Grid.Column="4" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec1306" Grid.Row="12" Grid.Column="5" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec1307" Grid.Row="12" Grid.Column="6" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec1308" Grid.Row="12" Grid.Column="7" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec1309" Grid.Row="12" Grid.Column="8" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec1310" Grid.Row="12" Grid.Column="9" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec1311" Grid.Row="12" Grid.Column="10" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec1312" Grid.Row="12" Grid.Column="11" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec1313" Grid.Row="12" Grid.Column="12" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec1314" Grid.Row="12" Grid.Column="13" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec1315" Grid.Row="12" Grid.Column="14" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec1316" Grid.Row="12" Grid.Column="15" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec1317" Grid.Row="12" Grid.Column="16" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec1318" Grid.Row="12" Grid.Column="17" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec1319" Grid.Row="12" Grid.Column="18" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec1320" Grid.Row="12" Grid.Column="19" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec1321" Grid.Row="12" Grid.Column="20" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec1322" Grid.Row="12" Grid.Column="21" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec1323" Grid.Row="12" Grid.Column="22" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec1324" Grid.Row="12" Grid.Column="23" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec1325" Grid.Row="12" Grid.Column="24" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <!-- Row 14-->
+                    <Rectangle Name="Rec1401" Grid.Row="13" Grid.Column="0" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec1402" Grid.Row="13" Grid.Column="1" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec1403" Grid.Row="13" Grid.Column="2" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec1404" Grid.Row="13" Grid.Column="3" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec1405" Grid.Row="13" Grid.Column="4" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec1406" Grid.Row="13" Grid.Column="5" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec1407" Grid.Row="13" Grid.Column="6" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec1408" Grid.Row="13" Grid.Column="7" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec1409" Grid.Row="13" Grid.Column="8" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec1410" Grid.Row="13" Grid.Column="9" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec1411" Grid.Row="13" Grid.Column="10" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec1412" Grid.Row="13" Grid.Column="11" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec1413" Grid.Row="13" Grid.Column="12" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec1414" Grid.Row="13" Grid.Column="13" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec1415" Grid.Row="13" Grid.Column="14" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec1416" Grid.Row="13" Grid.Column="15" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec1417" Grid.Row="13" Grid.Column="16" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec1418" Grid.Row="13" Grid.Column="17" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec1419" Grid.Row="13" Grid.Column="18" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec1420" Grid.Row="13" Grid.Column="19" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec1421" Grid.Row="13" Grid.Column="20" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec1422" Grid.Row="13" Grid.Column="21" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec1423" Grid.Row="13" Grid.Column="22" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec1424" Grid.Row="13" Grid.Column="23" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec1425" Grid.Row="13" Grid.Column="24" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <!-- Row 15-->
+                    <Rectangle Name="Rec1501" Grid.Row="14" Grid.Column="0" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec1502" Grid.Row="14" Grid.Column="1" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec1503" Grid.Row="14" Grid.Column="2" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec1504" Grid.Row="14" Grid.Column="3" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec1505" Grid.Row="14" Grid.Column="4" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec1506" Grid.Row="14" Grid.Column="5" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec1507" Grid.Row="14" Grid.Column="6" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec1508" Grid.Row="14" Grid.Column="7" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec1509" Grid.Row="14" Grid.Column="8" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec1510" Grid.Row="14" Grid.Column="9" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec1511" Grid.Row="14" Grid.Column="10" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec1512" Grid.Row="14" Grid.Column="11" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec1513" Grid.Row="14" Grid.Column="12" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec1514" Grid.Row="14" Grid.Column="13" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec1515" Grid.Row="14" Grid.Column="14" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec1516" Grid.Row="14" Grid.Column="15" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec1517" Grid.Row="14" Grid.Column="16" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec1518" Grid.Row="14" Grid.Column="17" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec1519" Grid.Row="14" Grid.Column="18" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec1520" Grid.Row="14" Grid.Column="19" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec1521" Grid.Row="14" Grid.Column="20" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec1522" Grid.Row="14" Grid.Column="21" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec1523" Grid.Row="14" Grid.Column="22" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec1524" Grid.Row="14" Grid.Column="23" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Name="Rec1525" Grid.Row="14" Grid.Column="24" Width="32" Height="32" MouseDown="Rec_MouseDown">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/MapMaker;component/tiles.png" AlignmentX="Left" AlignmentY="Top" Stretch="None" TileMode="None" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                </Grid>
+            </Border>
+        </Viewbox>
+        <!-- Controls -->
+        <Grid Name="gridControls" Grid.Row="0">
+            <Grid.Background>
+                <LinearGradientBrush EndPoint="1,0.5" StartPoint="0,0.5">
+                    <GradientStop Color="White" Offset="0" />
+                    <GradientStop Color="LightGray" Offset="1" />
+                </LinearGradientBrush>
+            </Grid.Background>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="100"></ColumnDefinition>
+                <ColumnDefinition Width="50"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="32"></RowDefinition>
+                <RowDefinition Height="32"></RowDefinition>
+                <RowDefinition Height="32"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+            </Grid.RowDefinitions>
+            <Button Name="butLoad" Grid.Row="0" Grid.Column="0" Width="100" Height="25" Content="Load Tiles" Click="ButLoad_Click" ToolTip="Load a different 32x32 Tileset">
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="LightBlue" Offset="0"/>
+                        <GradientStop Color="White" Offset="1"/>
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+            <Button Name="butPrint" Grid.Row="1" Grid.Column="0" Width="100" Height="25" Content="Save To Image" Click="ButPrint_Click" ToolTip="Save the current map to an image file">
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="LightGreen" Offset="0"/>
+                        <GradientStop Color="White" Offset="1"/>
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+            <Button Name="butClear" Grid.Row="2" Grid.Column="0" Width="100" Height="25" Content="Clear Image" Click="ButClear_Click" ToolTip="Load built in tileset and clear the map">
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="Beige" Offset="0"/>
+                        <GradientStop Color="White" Offset="1"/>
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+            <TextBlock Grid.Row="3" Grid.Column="0" Text="Selected:" TextAlignment="Right" VerticalAlignment="Center"></TextBlock>
+            <Rectangle Name="rectSelect" Grid.Row="3" Grid.Column="1" Width="32" Height="32"></Rectangle>
+            <ListBox Name="lbImages" Grid.Row="0" Grid.Column="3" Grid.RowSpan="4" ScrollViewer.VerticalScrollBarVisibility="Disabled" Background="{x:Null}">
+                <ListBox.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <WrapPanel Orientation="Vertical" />
+                    </ItemsPanelTemplate>
+                </ListBox.ItemsPanel>
+            </ListBox>
+        </Grid>
+    </Grid>
+</Window>

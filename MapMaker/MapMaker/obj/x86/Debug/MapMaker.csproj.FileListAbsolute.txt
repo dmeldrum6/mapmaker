@@ -1,0 +1,13 @@
+c:\users\zero\documents\visual studio 2010\Projects\MapMaker\MapMaker\bin\Debug\MapMaker.exe
+c:\users\zero\documents\visual studio 2010\Projects\MapMaker\MapMaker\bin\Debug\MapMaker.pdb
+c:\users\zero\documents\visual studio 2010\Projects\MapMaker\MapMaker\obj\x86\Debug\MainWindow.baml
+c:\users\zero\documents\visual studio 2010\Projects\MapMaker\MapMaker\obj\x86\Debug\MainWindow.g.cs
+c:\users\zero\documents\visual studio 2010\Projects\MapMaker\MapMaker\obj\x86\Debug\App.g.cs
+c:\users\zero\documents\visual studio 2010\Projects\MapMaker\MapMaker\obj\x86\Debug\MapMaker_MarkupCompile.cache
+c:\users\zero\documents\visual studio 2010\Projects\MapMaker\MapMaker\obj\x86\Debug\MapMaker.g.resources
+c:\users\zero\documents\visual studio 2010\Projects\MapMaker\MapMaker\obj\x86\Debug\MapMaker.Properties.Resources.resources
+c:\users\zero\documents\visual studio 2010\Projects\MapMaker\MapMaker\obj\x86\Debug\MapMaker.csproj.GenerateResource.Cache
+c:\users\zero\documents\visual studio 2010\Projects\MapMaker\MapMaker\obj\x86\Debug\MapMaker.exe
+c:\users\zero\documents\visual studio 2010\Projects\MapMaker\MapMaker\obj\x86\Debug\MapMaker.pdb
+C:\Users\zero\Documents\Visual Studio 2010\Projects\MapMaker\MapMaker\obj\x86\Debug\MapMaker.csprojAssemblyReference.cache
+C:\Users\zero\Documents\Visual Studio 2010\Projects\MapMaker\MapMaker\obj\x86\Debug\MapMaker.csproj.CoreCompileInputs.cache
